@@ -1,10 +1,10 @@
-# 🛡 sided.news
+![Image](demo.png)
 
 ### Description
 ---
 News from the other side of the political spectrum that challenge your existing biases.
 
-![Image](demo.png)
+
 
 
 ### Live
