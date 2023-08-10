@@ -1,0 +1,47 @@
+.keys {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 9.1em;
+  height: 100%;
+}
+
+.settings {
+  display: flex;
+  height: 100%;
+  margin-left: 2em;
+}
+
+.page_no {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--secondary-white);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+
+  width: 2em;
+  height: 100%;
+}
+
+@media (max-width: 50em) {
+  .settings {
+    display: flex;
+    height: 100%;
+    margin-left: 1.2em;
+  }
+}
+
+@media (max-width: 26em) {
+  .settings {
+    display: none;
+  }
+}

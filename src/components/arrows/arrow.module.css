@@ -1,0 +1,37 @@
+.arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 3em;
+  cursor: pointer;
+  outline: 3px solid var(--tertiary-black);
+  border-radius: var(--border-radius);
+}
+
+.arrow:focus {
+  outline: 3px dashed var(--tertiary-black);
+}
+
+.arrow:hover:not(.disabled) {
+  transition-duration: 0.3s;
+  transform: scale(1.01);
+  opacity: 0.9;
+}
+
+.arrow:not(:hover .disabled) {
+  transition-duration: 0.3s;
+  transform: scale(1);
+}
+
+.arrow:active:not(.disabled) {
+  transition-duration: 0.2s;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}

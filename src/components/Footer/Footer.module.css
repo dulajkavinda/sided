@@ -1,40 +1,20 @@
 .main {
-  height: 80px;
-  width: 100%;
-  background-color: #f4f4f4;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  height: 6em;
+  width: 99%;
+  font-weight: 600;
+  color: var(--secondary-white);
 }
 
-.footer_copy {
-  color: #1a1c26;
-  opacity: 0.5;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.dev_by {
-  color: #1a1c26;
-  opacity: 1;
-  font-size: 1rem;
-  font-weight: 600;
-}
-@media (max-width: 600px) {
-  .footer_copy {
-    color: #1a1c26;
-    opacity: 0.6;
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-  .dev_by {
-    color: #1a1c26;
-    opacity: 1;
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
+@media (max-width: 54em) {
   .main {
-    height: 70px;
+    width: 25em;
+  }
+}
+
+@media (max-width: 26em) {
+  .main {
+    width: 90%;
   }
 }

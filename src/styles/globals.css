@@ -1,0 +1,37 @@
+:root {
+  --border-radius: 12px;
+  --border-radius--large: 30px;
+  --primary-font: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --small-font-size: 0.9rem;
+  --normal-font-size: 1.2rem;
+
+  --primary-black: #010409;
+  --secondary-black: #161b22;
+  --tertiary-black: #21262d;
+
+  --primary-white: #f0f6fc;
+  --secondary-white: #7d8590;
+  --tertiary-white: #35393f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary-black);
+}
+
+a {
+  all: unset;
+}

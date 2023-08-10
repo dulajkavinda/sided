@@ -1,0 +1,160 @@
+@keyframes loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--secondary-black);
+  font-family: var(--primary-font);
+
+  border-radius: var(--border-radius);
+  border: 1px solid var(--tertiary-white);
+  padding: 1em;
+
+  width: 25em;
+  height: 9em;
+
+  animation: loading 2s linear infinite;
+  /* Using darker colors in the gradient */
+  background: linear-gradient(
+    90deg,
+    var(--secondary-black),
+    var(--tertiary-black),
+    var(--secondary-black),
+    var(--secondary-black)
+  );
+  background-size: 200% 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 25em;
+  height: 9em;
+
+  background-color: var(--secondary-black);
+  font-family: var(--primary-font);
+
+  border-radius: var(--border-radius);
+  border: 1px solid var(--tertiary-white);
+  padding: 1em;
+
+  background-image: linear-gradient(
+    to right,
+    rgb(212, 212, 212),
+    rgba(255, 255, 255, 0)
+  );
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+
+  cursor: pointer;
+}
+
+.post_card {
+  border-radius: var(--border-radius);
+  text-decoration: none;
+}
+
+.post_card:focus {
+  outline: 1px dashed var(--secondary-white);
+
+  transition-duration: 0.3s;
+  opacity: 0.8;
+}
+
+.header h1 {
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+
+  color: var(--primary-white);
+}
+
+.body {
+  height: 1em;
+}
+
+.footer {
+  display: flex;
+  color: var(--secondary-white);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.footer_main {
+  display: flex;
+  color: var(--secondary-white);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  gap: 1em;
+}
+
+.likes {
+  display: flex;
+  gap: 3px;
+}
+
+.channel {
+  display: flex;
+  gap: 3px;
+  font-weight: 600;
+}
+
+.date {
+  display: flex;
+  font-weight: 600;
+  gap: 3px;
+}
+
+.main:hover {
+  transition-duration: 0.3s;
+  transform: scale(1.002);
+  opacity: 0.9;
+}
+
+.main:not(:hover) {
+  transition-duration: 0.3s;
+  transform: scale(1);
+}
+
+.main:active {
+  transition-duration: 0.2s;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.post_id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-end;
+}
+
+@media (max-width: 26em) {
+  .tools {
+    width: 90%;
+  }
+
+  .post_card {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    width: 90%;
+  }
+}
